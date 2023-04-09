@@ -1,0 +1,10 @@
+For remove_if() member function, the worst-case run-time is O(n) where n = theSize of list. This is 
+because there is only one for loop and one if statement inside the for loop. The for loop will run
+through size of n, whereas the if statement will always run at O(1). The if statement is negligable 
+since it will always take the same amount of time to run and we have a for loop with time-complexity O(n).
+This means the overall worse-case run-time is equal to that of the for loop, which is O(n).
+
+For reverse() member function, the worse-case run-time is also O(n). This is for the same reason as before, 
+there is only one while loop which will run through the size of the list n. Inside the while loop, we set 
+current = current->prev until we reach the NULL element that the tail points to. This means worse-case
+run-time will equal that of the while loop, which is O(n).
